@@ -1,68 +1,79 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+    --color-primary: rgb(255, 89, 89);
+    --color-primary-75: rgba(255, 89, 89, .75);
+    --color-primary-50: rgba(255, 89, 89, .50);
+    --color-primary-25: rgba(255, 89, 89, .25);
+    --color-secondary: rgb(242, 196, 218);
+    --color-gradient-black: linear-gradient(180deg, rgb(110, 226, 245), rgb(10, 11, 11));
+    --color-black: rgb(10, 11, 11);
+    --color-black-75: rgba(10, 11, 11, .75);
+    --color-black-50: rgba(10, 11, 11, .50);
+    --color-black-25: rgba(10, 11, 11, .25);
+    --color-black-15: rgba(10, 11, 11, .15);
+    --color-black-5: rgba(10, 11, 11, .05);
+    --color-white: rgb(242, 248, 249);
+    --color-white-75: rgba(242, 248, 249, .75);
+    --color-white-50: rgba(242, 248, 249, .50);
+    --color-white-25: rgba(242, 248, 249, .25);
+    --color-white-10: rgba(242, 248, 249, .10);
+    --color-white-15: rgba(242, 248, 249, .15);
+    --color-white-5: rgba(242, 248, 249, .05);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+* {
+    font-family: "Poppins", serif;
+    font-style: normal;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 4.2rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3.2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h3 {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* p {
+    font-size: 1rem;
+} */
+
+body {
+    background-color: var(--color-black);
 }
