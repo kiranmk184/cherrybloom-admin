@@ -1,8 +1,8 @@
-import * as Yup from "yup";
+import { object } from "yup";
 import { createValidator } from "../factories/validationFactory";
 
-export const UserValidation = {
-  create: Yup.object().shape({
+export const CategoryValidation = {
+  create: object().shape({
     name: createValidator({
       type: "string",
       required: true,

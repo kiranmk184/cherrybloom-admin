@@ -1,6 +1,5 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { mixed, object, string } from "yup";
 import { categoryStoreApi } from "../../services/CategoryService";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router";
