@@ -1,5 +1,5 @@
 import { UserValidation } from "../validations/userValidation";
-import { useValidationForm } from "../hooks/useValidationForm";
+import { useValidationForm } from "../utils/hooks/useValidationForm";
 import { BaseForm } from "./form/BaseForm";
 import { InputField, FileUploadField } from "./form/FormFields";
 

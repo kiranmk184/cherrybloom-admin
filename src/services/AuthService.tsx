@@ -1,5 +1,5 @@
 import axios from "axios";
-import { handleError } from "../helpers/ErrorHandler";
+import { handleError } from "../utils/helpers/ErrorHandler";
 
 const api = "http://127.0.0.1/api/v1/auth/admin/";
 

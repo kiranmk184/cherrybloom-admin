@@ -1,5 +1,5 @@
 import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";
-import { Option } from "../../types/option";
+import { Option } from "../../utils/types/option";
 import { Autocomplete, Box, Checkbox, TextField } from "@mui/material";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";

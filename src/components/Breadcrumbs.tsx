@@ -8,14 +8,14 @@ const Breadcrumbs = () => {
     }
 
     return (
-        <nav aria-label="bradcrumb" className='flex items-center gap-1 text-white-75 font-semibold'>
-            <div className=' flex items-center gap-2'>
+        <nav aria-label="bradcrumb" className='mx-[1rem] my-[.5rem] flex items-center gap-1 text-app-content-85'>
+            <div className='flex items-center gap-2'>
                 <span className="material-symbols-rounded">
                     home
                 </span>
                 {`CherryBloom >`}
             </div>
-            <ol className='inline-flex items-center space-x-1 md:space-x-3'>
+            <ol className='inline-flex justify-center items-center space-x-1 md:space-x-3'>
                 {
                     pathnames.map((value, index) => {
                         const path = `/${pathnames.slice(0, index + 1).join('/')}`;
@@ -24,11 +24,11 @@ const Breadcrumbs = () => {
                                 {
                                     index < pathnames.length - 1 ? (
                                         <Link to={path} className='text-blue-600 hover:text-blue-800'>
-                                            {value.charAt(0).toUpperCase() + value.slice(1)}
+                                            {'> ' + value.charAt(0).toUpperCase() + value.slice(1)}
                                         </Link>
                                     ) : (
                                         <span className='' aria-current="page">
-                                            {value.charAt(0).toUpperCase() + value.slice(1)}
+                                            {'> ' + value.charAt(0).toUpperCase() + value.slice(1)}
                                         </span>
                                     )
                                 }

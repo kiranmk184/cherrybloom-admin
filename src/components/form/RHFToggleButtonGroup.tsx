@@ -1,6 +1,6 @@
 import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
-import { Option } from "../../types/option";
+import { Option } from "../../utils/types/option";
 
 type Props<T extends FieldValues> = {
     name: Path<T>;

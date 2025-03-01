@@ -3,7 +3,6 @@ import App from "../App";
 import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import AuthRoute from "./AuthRoutes";
 import Order from "../pages/Order";
 import DashboardLayout from "../layouts/DashboardLayout";
 import Product from "../pages/Product";
@@ -11,6 +10,7 @@ import Channel from "../pages/Channel";
 import Category from "../pages/category/Category";
 import Inventory from "../pages/Inventory";
 import CategoryFormProvider from "../pages/category/components/CategoryFormProvider";
+import AuthRoute from "./AuthRoute";
 
 export const router = createBrowserRouter([
     {
@@ -34,7 +34,10 @@ export const router = createBrowserRouter([
                     {
                         path: "category",
                         children: [
-                            { path: ":categoryId?", element: <Category /> },
+                            {
+                                path: ":categoryId?",
+                                element: <Category />,
+                            },
                             {
                                 path: "create",
                                 element: <CategoryFormProvider />,

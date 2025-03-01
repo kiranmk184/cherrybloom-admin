@@ -1,5 +1,5 @@
 import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";
-import { Option } from "../../types/option";
+import { Option } from "../../utils/types/option";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { DateRangePicker } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFnsV3";
