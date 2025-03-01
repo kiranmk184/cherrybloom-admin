@@ -1,19 +1,30 @@
-import Breadcrumbs from "./Breadcrumbs"
-import Header from "./Header"
+import Breadcrumbs from "./Breadcrumbs";
 
-const Main = ({ children }: { children: React.ReactNode }) => {
+const Main = ({
+    children,
+    isSidebarOpen,
+}: {
+    children: React.ReactNode;
+    isSidebarOpen: boolean;
+}) => {
     return (
         <>
-            <main className="absolute left-[25.25rem] m-0 p-2 pt-0 w-[calc(100%-25.25rem)] text-white">
-                <section className="bg-[rgba(10,11,11,0.25)] border-1 border-[rgba(242,248,249,.25)] rounded-md p-[.5rem] h-[calc(100vh-3.375rem)]">
-                    <header className="pb-[.5rem] border-b-1 border-b-white-25">
+            <main
+                className={`absolute ${
+                    isSidebarOpen
+                        ? "left-[17rem] w-[calc(100%-17rem)]"
+                        : "left-[3.5rem] w-[calc(100%-3.5rem)]"
+                }`}
+            >
+                <section className="mt-[4.5rem] h-[calc(100vh-4.5rem)] bg-app-content-bg-25">
+                    <header className="border-b-1 border-b-app-content-25">
                         <Breadcrumbs />
                     </header>
                     {children}
                 </section>
             </main>
         </>
-    )
-}
+    );
+};
 
-export default Main
+export default Main;

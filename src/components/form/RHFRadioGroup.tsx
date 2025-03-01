@@ -1,5 +1,5 @@
 import { Controller, FieldValues, Path, useFormContext } from "react-hook-form";
-import { Option } from "../../types/option";
+import { Option } from "../../utils/types/option";
 import {
     FormControl,
     FormControlLabel,
